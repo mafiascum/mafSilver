@@ -3,9 +3,9 @@
 
 .button {
 	display: inline-block;
-	padding: 6px 12px;
-	font-size: 14px;
-	font-weight: bold;
+	padding: 2px 8px;
+	font-size: 13px;
+	font-weight: normal;
 	font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
 	line-height: 1.4;
 	text-align: center;
@@ -20,10 +20,6 @@
 	        user-select: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
-}
-
-.post-buttons .button {
-	padding: 2px 8px;
 }
 
 .button:focus,
@@ -49,7 +45,7 @@
 	float: left;
 	border-radius: 0;
 	margin: 0;
-	padding: 6px 8px;
+	padding: 2px 5px;
 }
 
 .button-search-end {
@@ -61,7 +57,7 @@
 .search-header .button-search-end {
 	border-top-width: 0;
 	border-bottom-width: 0;
-	padding: 7px 8px;
+	padding: 3px 5px;
 }
 
 .search-header .button-search-end {

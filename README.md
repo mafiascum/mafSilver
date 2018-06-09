@@ -1,2 +1,2 @@
-# msLight
-MsLight PhpBB Style
+# mafSilver
+mafSilver PhpBB Style

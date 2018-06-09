@@ -84,34 +84,29 @@ ul.topiclist dfn {
 }
 
 li.row {
+	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	padding: 10px;
 }
 
-.index-footer li.row {
-	padding: 10px 20px;
-}
-
-ul.topiclist li.row:first-child {
-    border-top: 1px solid transparent;
+li.row strong {
+	font-weight: normal;
 }
 
 li.header dt, li.header dd {
 	line-height: 1em;
 	border-left-width: 0;
-	margin: 12px 0 12px 0;
+	margin: 2px 0 4px 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 1.2em;
-	font-weight: normal !important;
-
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
 }
 
 li.header dt {
+	font-weight: bold;
 	width: 100%;
-	margin-right: -460px;
+	margin-right: -440px;
 }
 
 li.header dt .list-inner {
@@ -131,23 +126,25 @@ li.header dl.row-item dt, li.header dl.row-item dd {
 
 li.header dl.row-item dt .list-inner {
 	/* Tweak for headers alignment when folder icon used */
-	padding-left: 12px;
-	padding-right: 38px;
+	padding-left: 0;
+	padding-right: 50px;
 }
 
 /* Forum list column styles */
 dl.row-item {
 	background-position: 10px 50%;		/* Position of folder icon */
 	background-repeat: no-repeat;
+	background-size: 32px;
 }
 
 dl.row-item dt {
 	background-repeat: no-repeat;
 	background-position: 5px 95%;		/* Position of topic icon */
+	background-size: 17px;
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 65px;					/* Space for folder icon */
+	padding-left: 52px;					/* Space for folder icon */
 }
 
 dl.row-item dt, dl.row-item dd {
@@ -174,8 +171,7 @@ dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
 	width: 80px;
 	text-align: center;
 	line-height: 2.2em;
-	font-size: 1.4em;
-	font-weight: bold;
+	font-size: 1.2em;
 }
 
 dd.posts, dd.topics, dd.views {
@@ -239,18 +235,19 @@ dd.option {
 
 .postbody h3.first {
 	/* The first post on the page uses this */
-	font-size: 1em;
+	font-size: 1.7em;
 }
 
 .postbody h3 {
 	/* Postbody requires a different h3 format - so change it here */
 	float: left;
-	font-size: 1em;
+	font-size: 1.5em;
 	padding: 2px 0 0 0;
 	margin-top: 0 !important;
 	margin-bottom: 0.3em !important;
 	text-transform: none;
 	border: none;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	line-height: 125%;
 }
 
@@ -265,7 +262,7 @@ dd.option {
 }
 
 .postbody .content {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	overflow-x: auto;
 }
 
@@ -326,6 +323,7 @@ dd.option {
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	padding-bottom: 1px;
 }
@@ -350,12 +348,14 @@ dd.option {
 }
 
 .content p {
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
 
 dl.faq {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	margin-top: 1em;
 	margin-bottom: 2em;
@@ -386,7 +386,8 @@ dl.faq dt {
 /* Post author */
 p.author {
 	margin-bottom: 0.6em;
-	padding: 0 0 20px 0;
+	padding: 0 0 5px 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.2em;
 	clear: both;
@@ -426,6 +427,7 @@ dd .signature {
 
 /* Post noticies */
 .notice {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	width: auto;
 	margin-top: 1.5em;
 	padding-top: 0.2em;
@@ -446,10 +448,9 @@ ul.searchresults {
 ----------------------------------------*/
 /* Quote block */
 blockquote {
-	background: transparent none 6px 8px no-repeat;
-	border-left: 5px solid transparent;
+	border: 1px solid transparent;
 	font-size: 0.95em;
-	margin: 0.5em 1px 20px 25px;
+	margin: 1em 1px 1em 25px;
 	overflow: hidden;
 	padding: 5px;
 }
@@ -457,15 +458,13 @@ blockquote {
 blockquote blockquote {
 	/* Nested quotes */
 	font-size: 1em;
-	margin: 0.5em 1px 20px 15px;
+	margin: 1em 1px 1em 15px;
 }
-
 
 blockquote cite {
 	/* Username/source of quoter */
 	font-style: normal;
 	font-weight: bold;
-	margin-left: 20px;
 	display: block;
 	font-size: 0.9em;
 }
@@ -474,8 +473,8 @@ blockquote cite cite {
 	font-size: 1em;
 }
 
-blockquote.uncited {
-	padding-top: 25px;
+blockquote cite:before, .uncited:before {
+	padding-right: 5px;
 }
 
 blockquote cite > div {
@@ -490,16 +489,17 @@ blockquote cite > div {
 
 /* Code block */
 .codebox {
-	padding: 3px;
 	border: 1px solid transparent;
 	font-size: 1em;
 	margin: 1em 0 1.2em 0;
+	word-wrap: normal;
 }
 
 .codebox p {
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
-	margin-bottom: 3px;
+	margin-bottom: 0;
+	padding: 3px;
 	font-size: 0.8em !important;
 	font-weight: bold;
 	display: block;
@@ -514,10 +514,9 @@ blockquote .codebox {
 	display: block;
 	height: auto;
 	max-height: 200px;
-	padding-top: 5px;
+	padding: 5px 3px;
 	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
 	line-height: 1.3em;
-	margin: 2px 0;
 }
 
 /* Attachments
@@ -536,6 +535,7 @@ blockquote .codebox {
 }
 
 .attachbox dt {
+	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -586,6 +586,7 @@ div.inline-attachment p {
 }
 
 dl.file {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	display: block;
 }
 
@@ -594,6 +595,7 @@ dl.file dt {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 dl.file dd {
@@ -609,6 +611,7 @@ dl.thumbnail img {
 
 dl.thumbnail dd {
 	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
@@ -622,6 +625,7 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 }
 
 fieldset.polls dl {
@@ -665,6 +669,7 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
 	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding: 2px 2px 0 2px;
 	overflow: visible;
@@ -692,7 +697,6 @@ fieldset.polls dd div {
 	width: 22%;
 	float: right;
 	display: inline;
-	text-align: center;
 }
 
 .postprofile dd, .postprofile dt {
@@ -715,15 +719,18 @@ fieldset.polls dd div {
 
 /* Post-profile avatars */
 .postprofile .has-avatar .avatar-container {
-	margin-bottom: 15px;
+	margin-bottom: 3px;
 	overflow: hidden;
 }
 
 .postprofile .avatar {
+	display: block;
+	float: left;
 	max-width: 100%;
 }
 
 .postprofile .avatar img {
+	display: block;
 	height: auto !important;
 	max-width: 100%;
 }

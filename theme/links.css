@@ -58,10 +58,10 @@ a {
 
 /* Links for forum/topic lists */
 a.forumtitle {
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
-	letter-spacing: -0.4px;
 }
 
 a.forumtitle:hover {
@@ -69,11 +69,11 @@ a.forumtitle:hover {
 }
 
 a.topictitle {
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
 	display: inline;
-	letter-spacing: -0.4px;
 }
 
 a.topictitle:hover {
@@ -86,6 +86,17 @@ a.lastsubject {
 }
 
 a.lastsubject:hover {
+	text-decoration: underline;
+}
+
+.row-item a:hover {
+	text-decoration: none
+}
+
+.row-item .topictitle:hover,
+.row-item .subforum:hover,
+.row-item .username:hover,
+.row-item .username-coloured:hover {
 	text-decoration: underline;
 }
 

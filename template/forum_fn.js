@@ -968,13 +968,3 @@ jQuery(function($) {
 
 	parseDocument($('body'));
 });
-
-
-/**
-* MafiaBlack */
-
-// Dynamically add a tringle tip to each category header
-jQuery(function($) {
-	'use strict';
-	$("li.header").append('<div class="triangle"></div>');
-});

@@ -23,9 +23,10 @@
 <!-- ENDIF -->
 
 <!--
-	phpBB style name: MafiaBlack
+	phpBB style name: mafSilver
 	Based on style:   prosilver (this is the default phpBB3 style)
-	Modified by: zakk ( https://forum.mafiascum.net/memberlist.php?mode=viewprofile&u=22459 )
+	Original author:
+	Modified by:
 -->
 
 <!-- IF S_ALLOW_CDN -->
@@ -35,7 +36,6 @@
 			families: ['Open+Sans:600:cyrillic-ext,latin,greek-ext,greek,vietnamese,latin-ext,cyrillic']
 		}
 	};
-
 	(function(d) {
 		var wf = d.createElement('script'), s = d.scripts[0];
 		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
@@ -73,7 +73,7 @@
 <!-- EVENT overall_header_stylesheets_after -->
 
 </head>
-<body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS}">
+<body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS} {T_THEME_NAME}">
 
 <!-- EVENT overall_header_body_before -->
 
@@ -128,37 +128,6 @@
 
 	<a id="start_here" class="anchor"></a>
 	<div id="page-body" class="page-body" role="main">
-
-
-        <ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
-            <!-- DEFINE $MICRODATA = ' itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""' -->
-            <!-- EVENT overall_header_breadcrumbs_before -->
-            <li class="breadcrumbs">
-                <!-- IF U_SITE_HOME -->
-                    <span class="crumb" {$MICRODATA}><a href="{U_SITE_HOME}" itemprop="url" data-navbar-reference="home"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span itemprop="title">{L_SITE_HOME}</span></a></span>
-                <!-- ENDIF -->
-                <!-- EVENT overall_header_breadcrumb_prepend -->
-                    <span class="crumb" {$MICRODATA}><a href="{U_INDEX}" itemprop="url" accesskey="h" data-navbar-reference="index"><!-- IF not U_SITE_HOME --><i class="icon fa-home fa-fw"></i><!-- ENDIF --><span itemprop="title">{L_INDEX}</span></a></span>
-
-                <!-- BEGIN navlinks -->
-                    <!-- EVENT overall_header_navlink_prepend -->
-                    <span class="crumb" {$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->><a href="{navlinks.U_VIEW_FORUM}" itemprop="url"><span itemprop="title">{navlinks.FORUM_NAME}</span></a></span>
-                    <!-- EVENT overall_header_navlink_append -->
-                <!-- END navlinks -->
-                <!-- EVENT overall_header_breadcrumb_append -->
-            </li>
-            <!-- EVENT overall_header_breadcrumbs_after -->
-
-            <!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-                <li class="rightside responsive-search">
-                    <a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
-                        <i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-                    </a>
-                </li>
-            <!-- ENDIF -->
-        </ul>
-
-
 		<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
 		<div id="information" class="rules">
 			<div class="inner">
