@@ -93,7 +93,6 @@ function hslToRgb(h, s, l){
 	}
 
 function adjustColor(index, element) {
-	console.log("Has: " + $("body").hasClass("mafBlack"));
 	if(!$("body").hasClass("mafBlack"))
 		return;
 	
