@@ -483,3 +483,9 @@ a.header-avatar span:after {
 #page-header {
 	padding: 20px;
 }
+
+.bbtableheader {
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #DDDDDD;
+}
