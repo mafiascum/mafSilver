@@ -201,7 +201,7 @@ li.header dl.row-item dt .list-inner {
 	padding-left: 12px;
 	padding-right: 38px;
 }
-
+/**
 dl.row-item {
 	background-size: initial;
 }
@@ -209,7 +209,7 @@ dl.row-item {
 dl.row-item dt {
 	background-size: initial;
 }
-
+**/
 dl.row-item dt .list-inner {
 	padding-left: 65px;
 }
