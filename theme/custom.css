@@ -623,3 +623,8 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 	font-weight: normal;
 	font-size: 13px;
 }
+
+.postbody table {
+	border-collapse: separate;
+	border-spacing: 2px;
+}
