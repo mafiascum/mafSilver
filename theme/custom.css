@@ -676,3 +676,12 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 	border-collapse: separate;
 	border-spacing: 2px;
 }
+
+.submit-buttons {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+.submit-buttons input[type=submit]:not(:last-child) {
+	margin-left: 5px;
+}
