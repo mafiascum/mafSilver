@@ -685,3 +685,9 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 .submit-buttons input[type=submit]:not(:last-child) {
 	margin-left: 5px;
 }
+
+.recipients input {
+	font-size: 1.0em !important;
+    padding: 0px 5px !important;
+    font-weight: bold !important;
+}
