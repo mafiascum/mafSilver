@@ -665,6 +665,9 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 	.group-title ~ p {
 		margin-left: 5px;
 	}
+	.column1,.column2 {
+		clear: both;
+	}
 }
 
 .pagination .button {
