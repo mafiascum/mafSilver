@@ -609,13 +609,58 @@ dl.row-item dd.topics,dl.row-item  dd.posts {
 .postbody {
 	float: right;
 }
+
 @media (max-width: 700px){
+	.profile-rank img {
+		float: left;
+	}
+	ul.topiclist dt .list-inner {
+		margin-right: 0px;
+	}
+	.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
+		border-radius: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 	.headerbar + .navbar {
 		margin-top: 0px;
 	}
 	.post .postprofile {
 		width: auto;
 		float: none;
+		border : none;
+		border-bottom-width : 1px;
+		border-bottom-style : solid;
+	}
+	.postbody {
+		float: none;
+	}
+	li.row dl.row-item {
+		background-image : none;
+	}
+	dl.row-item dt .list-inner {
+		padding-left : 2px;
+	}
+	.forum-title, .topic-title, .solo {
+		margin-left : 5px;
+	}
+	.bar-top, .bar-bottom, .actions-jump, #activity_overview , .quickmod{
+		padding : 0px 5px;
+	}
+	.action-bar {
+		padding : 0px 5px;
+	}
+	.stat-block {
+		margin : 0px 5px;
+	}
+	tr th.name {
+		margin-left : 5px;
+	}
+	tbody tr td dfn, tbody tr td strong {
+		margin-left : 5px;
+	}
+	h2 {
+		margin-left: 5px;
 	}
 }
 
