@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 850px) {
-	.postbody { width: 82%; }
+	.postbody { width: 82% !important; }
 	.postprofile {
 		margin-right: 1%;
 	}
